@@ -16,11 +16,12 @@ export default function Navigation() {
 };
 
 
-interface IActiveLinkPorps {
+interface IActiveLinkProps {
     children?: ReactNode;
     href: string;
 }
-function ActiveLink(props: IActiveLinkPorps) {
+
+function ActiveLink(props: IActiveLinkProps) {
     const pathname = usePathname();
     const router = useRouter();
 
